@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visão geral - MEIControl</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%232563eb%27/%3E%3Cpath d=%27M7 18v-5M12 18V7M17 18v-8%27 stroke=%27white%27 stroke-width=%272.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo-app" class="topo topo-app"></header>
+
+  <div class="app">
+    <aside id="menu-lateral" class="menu-lateral"></aside>
+
+    <main class="conteudo">
+      <div class="conteudo-topo">
+        <div>
+          <span class="sobretitulo" id="mes-atual"></span>
+          <h1>Visão geral</h1>
+        </div>
+        <div class="acoes">
+          <button class="botao botao-primario" id="botao-nova-transacao"><span data-icone="mais"></span>Nova transação</button>
+        </div>
+      </div>
+
+      <div class="grade-indicadores">
+        <div class="card indicador">
+          <div class="indicador-topo"><small>Receitas do mês</small><span class="icone-caixa verde"><span data-icone="entrada"></span></span></div>
+          <strong id="ind-receitas">R$ 0,00</strong>
+          <span class="detalhe" id="var-receitas"></span>
+        </div>
+        <div class="card indicador">
+          <div class="indicador-topo"><small>Despesas do mês</small><span class="icone-caixa vermelho"><span data-icone="saida"></span></span></div>
+          <strong id="ind-despesas">R$ 0,00</strong>
+          <span class="detalhe" id="var-despesas"></span>
+        </div>
+        <div class="card indicador">
+          <div class="indicador-topo"><small>Saldo atual</small><span class="icone-caixa"><span data-icone="carteira"></span></span></div>
+          <strong id="ind-saldo">R$ 0,00</strong>
+          <span class="detalhe" id="det-saldo"></span>
+        </div>
+        <div class="card indicador">
+          <div class="indicador-topo"><small>Limite anual MEI</small><span class="icone-caixa"><span data-icone="alvo"></span></span></div>
+          <strong id="ind-limite">R$ 81.000,00</strong>
+          <span class="detalhe" id="det-limite"></span>
+        </div>
+      </div>
+
+      <div class="grade-painel">
+        <section class="card">
+          <div class="titulo-card">
+            <div><h3>Fluxo de caixa</h3><small id="sub-fluxo">Evolução do saldo nos últimos 30 dias</small></div>
+            <select class="controle seletor-pilula" id="periodo-fluxo" aria-label="Período">
+              <option value="7">7 dias</option>
+              <option value="30" selected>30 dias</option>
+              <option value="90">90 dias</option>
+            </select>
+          </div>
+          <div id="grafico-fluxo"></div>
+        </section>
+
+        <section class="card card-das">
+          <div class="titulo-card" style="margin-bottom:0">
+            <span class="icone-caixa amarelo"><span data-icone="calendario"></span></span>
+            <span class="etiqueta amarelo" id="prazo-das"></span>
+          </div>
+          <h3 id="titulo-das">Seu DAS vence em breve</h3>
+          <p id="texto-das">A guia do DAS vence todo dia 20. Programe o pagamento para manter seu MEI regular e com os benefícios previdenciários ativos.</p>
+          <div class="valor-das">
+            <small>Valor estimado</small>
+            <strong id="valor-das">R$ 0,00</strong>
+            <button class="botao botao-secundario botao-bloco" id="botao-das">Ver detalhes do DAS <span data-icone="chevronDireita"></span></button>
+          </div>
+        </section>
+      </div>
+
+      <section class="card">
+        <div class="titulo-card">
+          <div><h3>Transações recentes</h3><small>Últimas movimentações registradas</small></div>
+          <button class="link-acao" id="ver-todas">Ver todas <span data-icone="chevronDireita"></span></button>
+        </div>
+        <table class="tabela">
+          <thead>
+            <tr><th>Descrição</th><th>Categoria</th><th>Data</th><th class="direita">Valor</th><th class="direita">Ações</th></tr>
+          </thead>
+          <tbody id="lista-transacoes"></tbody>
+        </table>
+        <div id="vazio-transacoes"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/comum.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/painel.js"></script>
+</body>
+</html>
