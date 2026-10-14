@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEIControl - Versão de testes</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%232563eb%27/%3E%3Cpath d=%27M7 18v-5M12 18V7M17 18v-8%27 stroke=%27white%27 stroke-width=%272.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="index.html"><span class="logo-icone"><span data-icone="logo"></span></span><b>MEI<span>Control</span></b></a>
+    <span class="selo com-ponto">Versão de testes acadêmica</span>
+  </header>
+
+  <main class="aviso-pagina">
+    <div class="aviso-conteudo">
+      <span class="selo"><span data-icone="ferramenta"></span>Projeto experimental em desenvolvimento</span>
+      <h1>Estamos em <span class="destaque">desenvolvimento!</span></h1>
+      <p>O <strong>MEIControl</strong> é um projeto acadêmico (TCC). Esta versão foi concebida exclusivamente para validação e testes práticos de usabilidade.</p>
+
+      <div class="alerta">
+        <span class="icone-caixa amarelo"><span data-icone="alerta"></span></span>
+        Atenção: Não utilize este sistema para gerenciar finanças reais da sua empresa.
+      </div>
+
+      <div class="grade-aviso">
+        <div class="card">
+          <span class="icone-caixa"><span data-icone="checkCirculo"></span></span>
+          <h3>Funcionalidades Incompletas</h3>
+          <p>Algumas ferramentas e recursos ainda estão em fase de implementação e podem apresentar limitações ou instabilidades temporárias.</p>
+        </div>
+        <div class="card">
+          <span class="icone-caixa"><span data-icone="relogio"></span></span>
+          <h3>Dados Temporários</h3>
+          <p>As informações inseridas nesta versão de testes não são salvas de forma definitiva e podem ser redefinidas a qualquer momento.</p>
+        </div>
+        <div class="card">
+          <span class="icone-caixa"><span data-icone="cadeado"></span></span>
+          <h3>Use Informações Fictícias</h3>
+          <p>Por questões de privacidade e segurança, utilize apenas dados, valores e cadastros de teste durante a sua navegação e experimentação.</p>
+        </div>
+        <div class="card">
+          <span class="icone-caixa"><span data-icone="mensagem"></span></span>
+          <h3>Importância do seu Feedback</h3>
+          <p>Sua opinião como microempreendedor é essencial para aperfeiçoarmos o produto e aprimorarmos a experiência final do aplicativo.</p>
+        </div>
+      </div>
+
+      <div class="aviso-acao">
+        <a class="botao botao-primario botao-grande" href="inicio.html" id="botao-entendi">Entendi, quero conhecer o MEIControl <span data-icone="setaDireita"></span></a>
+        <small>Ao prosseguir, você concorda em utilizar este protótipo acadêmico para fins de teste.</small>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/comum.js"></script>
+  <script>
+    // Guarda que o usuário já leu o aviso
+    document.getElementById('botao-entendi').addEventListener('click', function () {
+      salvarDados('mei_aviso_lido', true);
+    });
+  </script>
+</body>
+</html>
