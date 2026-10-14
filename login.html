@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar - MEIControl</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%232563eb%27/%3E%3Cpath d=%27M7 18v-5M12 18V7M17 18v-8%27 stroke=%27white%27 stroke-width=%272.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="inicio.html"><span class="logo-icone"><span data-icone="logo"></span></span><b>MEI<span>Control</span></b></a>
+  </header>
+
+  <main class="acesso">
+    <section class="acesso-lado">
+      <div class="acesso-lado-conteudo">
+        <span class="sobretitulo">Finanças sem complicação</span>
+        <h1>Seu negócio merece decisões mais tranquilas.</h1>
+        <p>Tenha clareza sobre cada entrada, cada gasto e cada obrigação do seu MEI.</p>
+        <ul class="lista-check">
+          <li><span data-icone="checkCirculo"></span>Visão financeira em tempo real</li>
+          <li><span data-icone="checkCirculo"></span>Lembretes de DAS no prazo</li>
+          <li><span data-icone="checkCirculo"></span>Dados protegidos e organizados</li>
+        </ul>
+        <div class="seguro"><span data-icone="escudo"></span>Ambiente seguro para o seu negócio</div>
+      </div>
+    </section>
+
+    <section class="acesso-form">
+      <div class="acesso-form-conteudo">
+        <a class="voltar" href="inicio.html"><span data-icone="setaEsquerda"></span>Voltar para o início</a>
+        <h2>Bem-vindo de volta</h2>
+        <p class="subtitulo">Entre para acompanhar a saúde financeira do seu negócio.</p>
+
+        <form id="form-login" novalidate>
+          <div class="mensagem-form" id="mensagem-login"></div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <div class="entrada"><span data-icone="email"></span><input type="email" id="email" placeholder="voce@email.com" autocomplete="email"></div>
+            <span class="erro-campo"></span>
+          </div>
+          <div class="campo">
+            <label for="senha">Senha</label>
+            <div class="entrada com-olho"><span data-icone="cadeado"></span><input type="password" id="senha" placeholder="Sua senha" autocomplete="current-password">
+              <button type="button" class="botao-icone botao-olho" aria-label="Mostrar senha"><span data-icone="olho"></span></button></div>
+            <span class="erro-campo"></span>
+          </div>
+          <div class="linha-opcoes">
+            <label class="caixa-marcar"><input type="checkbox" id="lembrar">Lembrar de mim</label>
+            <button type="button" id="esqueci-senha">Esqueci a senha</button>
+          </div>
+          <button type="submit" class="botao botao-primario botao-bloco botao-grande">Entrar na minha conta</button>
+        </form>
+        <p class="troca-acesso">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se grátis</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/comum.js"></script>
+  <script src="js/acesso.js"></script>
+</body>
+</html>
