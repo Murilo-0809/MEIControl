@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados cadastrais - MEIControl</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%232563eb%27/%3E%3Cpath d=%27M7 18v-5M12 18V7M17 18v-8%27 stroke=%27white%27 stroke-width=%272.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="painel.html"><span class="logo-icone"><span data-icone="logo"></span></span><b>MEI<span>Control</span></b></a>
+    <div class="topo-status">
+      <span class="selo verde com-ponto" id="selo-conta">Conta criada com sucesso</span>
+      <span class="seguro-topo">Ambiente seguro <span data-icone="escudo"></span></span>
+    </div>
+  </header>
+
+  <main class="boas-vindas">
+    <div class="boas-vindas-conteudo">
+      <div class="boas-vindas-topo">
+        <span class="selo"><span data-icone="brilho"></span>Tudo pronto para o seu controle</span>
+        <h1>Bem-vindo(a) ao MEIControl, <span class="destaque" id="nome-titulo"></span>! 👋</h1>
+        <p id="texto-boas-vindas">Sua conta foi criada. Confira abaixo as informações básicas do seu negócio cadastradas para garantir que tudo comece de forma 100% organizada.</p>
+      </div>
+
+      <section class="card painel-dados">
+        <div class="cabecalho-card">
+          <div class="titulo-com-icone">
+            <span class="icone-caixa"><span data-icone="predio"></span></span>
+            <div><h3>Dados Cadastrais do MEI</h3><small>Confirme os dados antes de acessar o seu painel financeiro</small></div>
+          </div>
+          <button class="botao botao-secundario botao-pequeno" id="botao-editar"><span data-icone="lapis"></span>Editar informações</button>
+        </div>
+
+        <div class="grade-dados">
+          <div class="dado"><span class="icone-caixa"><span data-icone="usuario"></span></span>
+            <div><small>Nome do responsável</small><strong id="dado-nome"></strong><span class="verde">✓ Titular da conta</span></div></div>
+          <div class="dado"><span class="icone-caixa"><span data-icone="loja"></span></span>
+            <div><small>Nome do negócio</small><strong id="dado-negocio"></strong><span class="mudo">Nome fantasia</span></div></div>
+          <div class="dado"><span class="icone-caixa"><span data-icone="documento"></span></span>
+            <div><small>CNPJ cadastrado</small><strong id="dado-cnpj"></strong><span class="verde">✓ Formato válido</span></div></div>
+          <div class="dado"><span class="icone-caixa"><span data-icone="maleta"></span></span>
+            <div><small>Ramo / atividade principal</small><strong id="dado-ramo"></strong><span class="mudo" id="dado-das"></span></div></div>
+          <div class="dado"><span class="icone-caixa"><span data-icone="email"></span></span>
+            <div><small>E-mail de acesso</small><strong id="dado-email"></strong><span class="verde">✓ E-mail principal</span></div></div>
+          <div class="dado"><span class="icone-caixa"><span data-icone="pizza"></span></span>
+            <div><small>Lembrete automático do DAS</small><strong>Ativado (Vencimento dia 20)</strong><span class="mudo">Avisos no sino do painel</span></div></div>
+        </div>
+
+        <div class="dica">
+          <span class="icone-caixa amarelo"><span data-icone="lampada"></span></span>
+          <p><strong>Dica inicial:</strong> Comece registrando o seu saldo atual ou cadastrando sua primeira entrada para ver o gráfico ganhar vida!</p>
+          <span class="etiqueta azul" id="dado-plano"></span>
+        </div>
+      </section>
+
+      <div class="boas-vindas-acao">
+        <a class="botao botao-primario botao-grande" href="painel.html">Acessar meu Painel <span data-icone="setaDireita"></span></a>
+        <small>Você pode atualizar qualquer informação cadastral a qualquer momento em <a href="boas-vindas.html">Configurações do MEI</a>.</small>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/comum.js"></script>
+  <script src="js/acesso.js"></script>
+  <script src="js/boas-vindas.js"></script>
+</body>
+</html>
