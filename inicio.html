@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEIControl - Controle financeiro para MEIs</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%232563eb%27/%3E%3Cpath d=%27M7 18v-5M12 18V7M17 18v-8%27 stroke=%27white%27 stroke-width=%272.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo topo-landing">
+    <a class="logo" href="inicio.html"><span class="logo-icone"><span data-icone="logo"></span></span><b>MEI<span>Control</span></b></a>
+    <nav id="menu-landing">
+      <a href="#recursos">Recursos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#planos">Planos</a>
+    </nav>
+    <div class="topo-acoes">
+      <a class="botao botao-secundario botao-pequeno" href="login.html">Entrar</a>
+      <a class="botao botao-primario botao-pequeno" href="cadastro.html">Cadastre-se grátis</a>
+      <button class="botao-icone botao-menu" id="botao-menu-landing" aria-label="Abrir menu"><span data-icone="menu"></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grade">
+        <div>
+          <span class="selo"><span data-icone="brilho"></span>Finanças para microempreendedores</span>
+          <h1>Seu MEI sob controle. <span class="destaque">Seu futuro em movimento.</span></h1>
+          <p>Controle receitas, despesas e impostos em um painel simples. Mais clareza para decidir, menos surpresas no caixa.</p>
+          <div class="hero-botoes">
+            <a class="botao botao-primario botao-grande" href="cadastro.html">Começar grátis <span data-icone="setaDireita"></span></a>
+            <a class="botao botao-secundario botao-grande" href="login.html">Já tenho uma conta</a>
+          </div>
+          <small><span data-icone="checkCirculo"></span>Sem cartão de crédito. Cadastro em poucos minutos.</small>
+        </div>
+
+        <!-- Ilustração do painel (imagem de apresentação, não são dados do usuário) -->
+        <div class="previa" aria-hidden="true">
+          <div class="previa-topo">
+            <div><small>Saldo do mês</small><strong>R$ 8.420,50</strong></div>
+            <span class="etiqueta verde">+12,4%</span>
+          </div>
+          <div class="previa-mini">
+            <div><small>Entradas</small><b class="verde">R$ 12.480</b></div>
+            <div><small>Saídas</small><b class="vermelho">R$ 4.060</b></div>
+          </div>
+          <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+            <defs><linearGradient id="g-previa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6" stop-opacity=".5"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs>
+            <path d="M0 100 C40 96 60 92 90 88 S150 78 180 66 S240 40 300 14 L300 120 L0 120 Z" fill="url(#g-previa)"/>
+            <path d="M0 100 C40 96 60 92 90 88 S150 78 180 66 S240 40 300 14" fill="none" stroke="#3b82f6" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-escura" id="recursos">
+      <div class="secao-conteudo">
+        <div class="secao-titulo">
+          <span class="sobretitulo">Controle sem complicação</span>
+          <h2>O essencial para cuidar bem do seu negócio</h2>
+        </div>
+        <div class="grade-4">
+          <div class="card recurso">
+            <span class="icone-caixa"><span data-icone="email"></span></span>
+            <h3>Tudo em um só lugar</h3>
+            <p>Receitas, despesas e vendas do dia organizadas em um painel simples de usar.</p>
+          </div>
+          <div class="card recurso">
+            <span class="icone-caixa"><span data-icone="sobe"></span></span>
+            <h3>Visão clara do caixa</h3>
+            <p>Gráficos e indicadores mostram para onde o seu dinheiro está indo.</p>
+          </div>
+          <div class="card recurso">
+            <span class="icone-caixa"><span data-icone="sino"></span></span>
+            <h3>DAS sempre em dia</h3>
+            <p>Lembretes do vencimento do DAS para você não pagar multas e juros.</p>
+          </div>
+          <div class="card recurso">
+            <span class="icone-caixa"><span data-icone="foguete"></span></span>
+            <h3>Pronto para crescer</h3>
+            <p>Acompanhe o limite anual do MEI e planeje os próximos passos do negócio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="depoimentos">
+      <div class="secao-conteudo">
+        <div class="secao-titulo">
+          <span class="sobretitulo">Quem usa recomenda</span>
+          <h2>Mais tempo para fazer o negócio crescer</h2>
+        </div>
+        <div class="grade-3">
+          <div class="card depoimento">
+            <span class="aspas">“</span>
+            <p>"Finalmente parei de misturar as contas da casa com as do trabalho. Agora sei exatamente quanto entra por mês."</p>
+            <strong>Ana Paula</strong><small>Designer freelancer</small>
+          </div>
+          <div class="card depoimento">
+            <span class="aspas">“</span>
+            <p>"O lembrete do DAS já me salvou de pagar multa. O painel é simples e eu entendo tudo rapidinho."</p>
+            <strong>Rafael Santos</strong><small>Confeiteiro</small>
+          </div>
+          <div class="card depoimento">
+            <span class="aspas">“</span>
+            <p>"Consigo ver meu faturamento e o limite do MEI sem planilha. Organização que faz diferença."</p>
+            <strong>Camila Moura</strong><small>Cabeleireira</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-escura" id="planos">
+      <div class="secao-conteudo">
+        <div class="secao-titulo">
+          <span class="sobretitulo">Planos flexíveis</span>
+          <h2>Escolha como o seu MEI evolui</h2>
+          <p>Comece grátis e evolua para o plano ideal quando precisar de mais recursos e da ajuda da inteligência artificial.</p>
+          <div class="alternar-plano" id="alternar-plano">
+            <button class="ativo" data-periodo="mensal">Mensal</button>
+            <button data-periodo="anual">Anual <span class="etiqueta verde">-20%</span></button>
+          </div>
+        </div>
+
+        <div class="grade-3">
+          <div class="card plano">
+            <span class="icone-caixa"><span data-icone="usuario"></span></span>
+            <h3>Gratuito</h3>
+            <p class="descricao">Para começar a organizar o seu MEI.</p>
+            <div class="preco" data-mensal="0" data-anual="0">R$ 0,00 <small>/mês</small></div>
+            <div class="cobranca"></div>
+            <ul>
+              <li><span data-icone="check"></span>Receitas, despesas e saldo</li>
+              <li><span data-icone="check"></span>Gráfico de fluxo de caixa</li>
+              <li><span data-icone="check"></span>Lembrete de vencimento do DAS</li>
+              <li><span data-icone="check"></span>Exibe anúncios</li>
+            </ul>
+            <a class="botao botao-secundario botao-bloco" href="cadastro.html?plano=Gratuito">Começar grátis</a>
+          </div>
+
+          <div class="card plano">
+            <span class="icone-caixa"><span data-icone="escudo"></span></span>
+            <h3>Sem Anúncios</h3>
+            <p class="descricao">Tudo do gratuito, sem interrupções.</p>
+            <div class="preco" data-mensal="9.90" data-anual="7.90">R$ 9,90 <small>/mês</small></div>
+            <div class="cobranca"></div>
+            <ul>
+              <li><span data-icone="check"></span>Tudo do plano Gratuito</li>
+              <li><span data-icone="check"></span>Navegação sem anúncios</li>
+              <li><span data-icone="check"></span>Exportação dos lançamentos</li>
+              <li><span data-icone="check"></span>Diário de vendas completo</li>
+            </ul>
+            <a class="botao botao-secundario botao-bloco" href="cadastro.html?plano=Sem Anúncios">Assinar sem anúncios</a>
+          </div>
+
+          <div class="card plano destacado">
+            <span class="selo selo-plano">Mais completo</span>
+            <span class="icone-caixa"><span data-icone="brilho"></span></span>
+            <h3>Com IA</h3>
+            <p class="descricao">Análises inteligentes para decidir melhor.</p>
+            <div class="preco" data-mensal="19.90" data-anual="15.90">R$ 19,90 <small>/mês</small></div>
+            <div class="cobranca"></div>
+            <ul>
+              <li><span data-icone="check"></span>Tudo do plano Sem Anúncios</li>
+              <li><span data-icone="check"></span>Análise de padrões de venda</li>
+              <li><span data-icone="check"></span>Comparativo por clima e dia</li>
+              <li><span data-icone="check"></span>Previsões do seu caixa</li>
+              <li><span data-icone="check"></span>Suporte prioritário</li>
+            </ul>
+            <a class="botao botao-primario botao-bloco" href="cadastro.html?plano=Com IA">Assinar com IA <span data-icone="setaDireita"></span></a>
+          </div>
+        </div>
+        <p class="nota-planos">Os planos pagos são apenas ilustrativos nesta versão acadêmica. Nenhuma cobrança é realizada durante os testes.</p>
+      </div>
+    </section>
+
+    <section class="secao cta">
+      <div class="secao-conteudo">
+        <span class="icone-caixa"><span data-icone="alvo"></span></span>
+        <h2>Pronto para assumir o controle?</h2>
+        <p>Organize hoje as finanças do seu MEI e acompanhe a saúde do seu negócio em um só lugar.</p>
+        <a class="botao botao-primario botao-grande" href="cadastro.html">Começar agora <span data-icone="setaDireita"></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/comum.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
